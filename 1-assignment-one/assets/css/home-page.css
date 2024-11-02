@@ -1,0 +1,66 @@
+.clear {
+  clear: both;
+}
+
+.home-page {
+  background-color: #f2e8df;
+  height: 100vh;
+}
+
+.home-page h1 {
+  margin: 0;
+  height: 100px;
+  padding: 30px;
+  font-size: 2.3rem;
+  color: #f28585;
+}
+
+.home-page h2 {
+  color: #f28585;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.info-card {
+  float: left;
+  width: 25%;
+  background-color: #86a69d;
+  color: #f2e8df;
+  padding: 50px;
+  margin-top: 150px;
+  height: 200px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.tasks-card {
+  float: left;
+  width: 75%;
+  padding: 50px;
+  height: calc(100vh - 100px);
+}
+
+.info-card a {
+  text-decoration: none;
+  color: #f2e8df;
+}
+
+.tasks-card ol li {
+  list-style-type: none;
+  margin: 5px;
+  float: left;
+}
+
+.tasks-card ol li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #f2e8df;
+  border: none;
+  background-color: #f28585;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

@@ -1,0 +1,27 @@
+.form {
+  width: 40%;
+  margin: 0px auto;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+}
+
+.form-btn {
+  text-align: right;
+}
+
+.form button {
+  padding: 10px 20px;
+  margin: 5px;
+  color: white;
+  background-color: #405189;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

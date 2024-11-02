@@ -1,0 +1,44 @@
+.btn-container {
+  text-align: center;
+  width: 100%;
+}
+
+.btn-container button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #405189;
+}
+
+.btn-secondary {
+  background-color: #3577f1;
+}
+
+.btn-success {
+  background-color: #0ab39c;
+}
+
+.btn-info {
+  background-color: #299cdb;
+}
+
+.btn-warning {
+  background-color: #f7b84b;
+}
+
+.btn-danger {
+  background-color: #f06548;
+}
+
+.btn-dark {
+  background-color: #212529;
+}

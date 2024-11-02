@@ -1,0 +1,15 @@
+.clear {
+  clear: both;
+}
+
+.blog-container {
+  background-color: #990866;
+}
+
+.blog-box {
+  width: calc((100% - 30px) / 3);
+  min-height: 300px;
+  background-color: #00ffff;
+  float: left;
+  margin: 20px 5px;
+}
