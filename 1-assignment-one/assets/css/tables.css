@@ -1,6 +1,51 @@
+body {
+  background-color: #f3f3f9;
+}
+/* .main-container {
+  width: 100%;
+} */
+
+.table-one-container,
+.table-two-container {
+  width: calc((100% - 40px) / 2);
+  height: 500px;
+  float: left;
+  margin: 20px 10px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.table-one-container h3,
+.table-two-container h3 {
+  color: #495057;
+  font-weight: bold;
+}
+
+.table-one-container h3,
+.table-two-container h3 {
+  margin-top: 0;
+}
+
+.table-one-container p,
+.table-two-container p {
+  color: #898ea5;
+}
+
+.table-one-container p span,
+.table-two-container p span {
+  color: #f77dac;
+  font-size: 0.85rem;
+}
+
 .table-one,
 .table-two {
-  width: 50%;
+  width: 100%;
   margin: 20px auto;
   border: none;
   border-collapse: collapse;

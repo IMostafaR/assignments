@@ -12,92 +12,107 @@
       <a href="../assignment-home-page.html" class="home-btn"> Home</a>
 
       <h2>Tables</h2>
-
-      <!-- Table one -->
-      <table class="table-one">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Customer</th>
-            <th>Date</th>
-            <th>Invoice</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="id">#VZ2110</td>
-            <td>Bobby Davis</td>
-            <td>October 15, 2021</td>
-            <td>$2,300</td>
-            <td><a href="#">View More</a></td>
-          </tr>
-          <tr>
-            <td class="id">#VZ2109</td>
-            <td>Christopher Neal</td>
-            <td>October 7, 2021</td>
-            <td>$5,500</td>
-            <td><a href="#">View More</a></td>
-          </tr>
-          <tr>
-            <td class="id">#VZ2108</td>
-            <td>Monkey Karry</td>
-            <td>October 5, 2021</td>
-            <td>$2,420</td>
-            <td><a href="#">View More</a></td>
-          </tr>
-          <tr>
-            <td class="id">#VZ2107</td>
-            <td>James White</td>
-            <td>October 2, 2021</td>
-            <td>$7,452</td>
-            <td><a href="#">View More</a></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <!-- Table Two -->
-      <table class="table-two">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Customer</th>
-            <th>Date</th>
-            <th>Invoice</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="gray">
-            <td class="id">01</td>
-            <td>Bobby Davis</td>
-            <td>Nov 14, 2021</td>
-            <td>$2,410</td>
-            <td><span class="confirmed">Confirmed</span></td>
-          </tr>
-          <tr>
-            <td class="id">02</td>
-            <td>Christopher Neal</td>
-            <td>Nov 21, 2021</td>
-            <td>$1,450</td>
-            <td><span class="waiting">Waiting</span></td>
-          </tr>
-          <tr class="gray">
-            <td class="id">03</td>
-            <td>Monkey Karry</td>
-            <td>Nov 24, 2021</td>
-            <td>$3,500</td>
-            <td><span class="confirmed">Confirmed</span></td>
-          </tr>
-          <tr>
-            <td class="id">04</td>
-            <td>James White</td>
-            <td>Nov 25, 2021</td>
-            <td>$6,875</td>
-            <td><span class="cancelled">Cancelled</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="main-container">
+        <div class="table-one-container">
+          <h3>Default Table</h3>
+          <hr />
+          <p>
+            Use <span>table</span> class to show bootstrap-based default table.
+          </p>
+          <!-- Table one -->
+          <table class="table-one">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Invoice</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="id">#VZ2110</td>
+                <td>Bobby Davis</td>
+                <td>October 15, 2021</td>
+                <td>$2,300</td>
+                <td><a href="#">View More</a></td>
+              </tr>
+              <tr>
+                <td class="id">#VZ2109</td>
+                <td>Christopher Neal</td>
+                <td>October 7, 2021</td>
+                <td>$5,500</td>
+                <td><a href="#">View More</a></td>
+              </tr>
+              <tr>
+                <td class="id">#VZ2108</td>
+                <td>Monkey Karry</td>
+                <td>October 5, 2021</td>
+                <td>$2,420</td>
+                <td><a href="#">View More</a></td>
+              </tr>
+              <tr>
+                <td class="id">#VZ2107</td>
+                <td>James White</td>
+                <td>October 2, 2021</td>
+                <td>$7,452</td>
+                <td><a href="#">View More</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-two-container">
+          <h3>Striped Rows</h3>
+          <hr />
+          <p>
+            use <span>table-striped</span> class to add zebra-striping to any
+            table row within the &#10094;tbody&#10095;.
+          </p>
+          <!-- Table Two -->
+          <table class="table-two">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Invoice</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="gray">
+                <td class="id">01</td>
+                <td>Bobby Davis</td>
+                <td>Nov 14, 2021</td>
+                <td>$2,410</td>
+                <td><span class="confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td class="id">02</td>
+                <td>Christopher Neal</td>
+                <td>Nov 21, 2021</td>
+                <td>$1,450</td>
+                <td><span class="waiting">Waiting</span></td>
+              </tr>
+              <tr class="gray">
+                <td class="id">03</td>
+                <td>Monkey Karry</td>
+                <td>Nov 24, 2021</td>
+                <td>$3,500</td>
+                <td><span class="confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td class="id">04</td>
+                <td>James White</td>
+                <td>Nov 25, 2021</td>
+                <td>$6,875</td>
+                <td><span class="cancelled">Cancelled</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
   </body>
 </html>

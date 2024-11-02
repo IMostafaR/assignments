@@ -1,10 +1,46 @@
-.form {
-  width: 40%;
-  margin: 0px auto;
+body {
+  background-color: #f3f3f9;
 }
 
-.form input,
-.form textarea {
+.container {
+  width: 50%;
+  margin: 0px auto 50px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container h3,
+.container form label {
+  color: #495057;
+  font-weight: bold;
+}
+
+.container h3 {
+  margin-top: 0;
+}
+
+.container form label {
+  display: block;
+  margin-top: 20px;
+}
+
+.container p {
+  color: #898ea5;
+}
+
+.container p span {
+  color: #f77dac;
+  font-size: 0.85rem;
+}
+
+.container form input,
+.container form textarea {
   width: 100%;
   padding: 12px 10px;
   margin: 8px 0;
@@ -16,7 +52,7 @@
   text-align: right;
 }
 
-.form button {
+.container form button {
   padding: 10px 20px;
   margin: 5px;
   color: white;
