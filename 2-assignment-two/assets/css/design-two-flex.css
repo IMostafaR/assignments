@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  height: 100px;
+  background-color: lightblue;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  background-color: white;
+}
+
+.content aside {
+  background-color: lightgoldenrodyellow;
+  flex-grow: 1;
+}
+
+.content article {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-grow: 3;
+}
+
+.content article .mini-article {
+  background-color: lightsalmon;
+  margin: 20px;
+  width: calc(100% / 3);
+  height: calc(100vh - 150px - 100px - 80px);
+  flex-grow: 1;
+}
+
+.content article .mini-article.wide {
+  background-color: lightgray;
+  height: 100px;
+}
+
+footer {
+  height: 50px;
+  background-color: lightpink;
+}
