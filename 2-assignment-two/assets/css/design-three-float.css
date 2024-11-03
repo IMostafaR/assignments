@@ -1,0 +1,81 @@
+:root {
+  --main-bg: #e5e5e5;
+  --text-color: #aaaaaa;
+}
+.clear {
+  clear: both;
+}
+
+header {
+  height: 150px;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  text-align: center;
+  line-height: 150px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.content,
+.content nav,
+.content article,
+.content aside {
+  height: calc(100vh - 200px - 20px);
+}
+
+.content {
+  background-color: white;
+  margin: 10px auto;
+}
+
+.content nav,
+.content article,
+.content aside {
+  float: left;
+}
+
+.content nav {
+  width: 20%;
+}
+
+.content nav ul {
+  list-style: none;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.content nav ul li {
+  background-color: var(--main-bg);
+  margin-bottom: 10px;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.content nav ul li a {
+  color: black;
+}
+
+.content article {
+  width: 60%;
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+.content aside {
+  background-color: var(--main-bg);
+  width: 20%;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+footer {
+  height: 50px;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.3rem;
+}
