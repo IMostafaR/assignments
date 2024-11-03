@@ -64,7 +64,6 @@ header h1 {
   background-color: var(--main-bg);
   color: var(--text-color);
   flex-basis: 20%;
-  color: var(--text-color);
   text-align: center;
   font-size: 1.4rem;
   padding: 10px;
