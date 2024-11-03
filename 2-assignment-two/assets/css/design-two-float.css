@@ -1,0 +1,49 @@
+.clear {
+  clear: both;
+}
+
+header {
+  height: 100px;
+  background-color: lightblue;
+}
+
+.content {
+  height: calc(100vh - 150px);
+  background-color: white;
+}
+
+.content article,
+.content aside {
+  float: left;
+  height: calc(100vh - 150px);
+}
+
+article {
+  width: 80%;
+  background-color: white;
+}
+
+aside {
+  width: 20%;
+  background-color: lightgoldenrodyellow;
+}
+
+.content article .container .mini-article {
+  background-color: lightsalmon;
+  height: calc(100vh - 150px - 140px - 40px);
+  width: calc((100% - 80px) / 2);
+  float: left;
+  margin: 20px;
+}
+
+.content article .wide-article {
+  height: 100px;
+  background-color: lightgray;
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+
+footer {
+  height: 50px;
+  background-color: lightpink;
+}
