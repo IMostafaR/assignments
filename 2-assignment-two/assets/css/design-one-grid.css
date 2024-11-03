@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  height: 100vh;
+}
+
+header {
+  background-color: lightblue;
+}
+
+.content {
+  background-color: white;
+}
+
+footer {
+  background-color: lightpink;
+}
