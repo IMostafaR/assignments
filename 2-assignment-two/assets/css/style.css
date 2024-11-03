@@ -13,16 +13,22 @@ h1 {
 }
 
 .home-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
-  margin: 20px 30px;
-  color: #f2e8df;
+  padding: 30px 30px;
+  color: #0e1f26;
   border: none;
-  background-color: #f28585;
+  background-color: #f26d3d;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.home-btn:hover {
+  background-color: #d92e1e;
+  color: #f2ece4;
 }
