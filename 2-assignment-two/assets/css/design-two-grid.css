@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+header {
+  background-color: lightblue;
+}
+
+.content {
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+}
+
+.content article {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content article .mini-article {
+  background-color: lightsalmon;
+  margin: 20px;
+}
+
+.content article .mini-article.wide {
+  background-color: lightgray;
+  grid-column: 1/3;
+}
+
+.content aside {
+  background-color: lightgoldenrodyellow;
+}
+
+footer {
+  background-color: lightpink;
+}
