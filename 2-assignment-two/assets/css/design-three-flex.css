@@ -1,0 +1,97 @@
+:root {
+  --main-bg: #e5e5e5;
+  --text-color: #aaaaaa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  background-color: white;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.content nav {
+  flex-basis: 20%;
+}
+
+.content nav ul {
+  list-style: none;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.content nav ul li {
+  background-color: var(--main-bg);
+  margin-bottom: 10px;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.content nav ul li a {
+  color: black;
+}
+
+.content article {
+  flex-basis: 60%;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+.content aside {
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  flex-basis: 20%;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: block;
+  }
+}

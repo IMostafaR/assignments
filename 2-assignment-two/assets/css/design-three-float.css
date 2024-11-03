@@ -62,6 +62,7 @@ header h1 {
   width: 60%;
   color: var(--text-color);
   font-size: 1.4rem;
+  padding: 10px;
 }
 .content aside {
   background-color: var(--main-bg);
@@ -69,6 +70,7 @@ header h1 {
   color: var(--text-color);
   text-align: center;
   font-size: 1.4rem;
+  padding: 10px;
 }
 
 footer {
@@ -78,4 +80,28 @@ footer {
   text-align: center;
   line-height: 50px;
   font-size: 1.3rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .content nav,
+  .content article,
+  .content aside {
+    float: none;
+    width: 100%;
+  }
+  .content,
+  .content nav,
+  .content article,
+  .content aside {
+    height: auto;
+  }
 }
