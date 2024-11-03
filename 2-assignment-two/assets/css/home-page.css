@@ -1,0 +1,77 @@
+body {
+  background-color: #f2ece4;
+  color: #0e1f26;
+}
+
+.home-page {
+  display: flex;
+  width: 100%;
+}
+
+.info-card,
+.tasks-card {
+  padding: 20px;
+}
+
+.info-card {
+  align-self: center;
+  flex-basis: 25%;
+  flex-grow: 0;
+  height: 150px;
+  background-color: #f26d3d;
+  font-weight: bold;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.info-card a {
+  text-decoration: none;
+  color: #0e1f26;
+}
+
+.tasks-card {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.row {
+  display: flex;
+  padding: 20px;
+}
+
+.cell {
+  flex-grow: 1;
+}
+
+.cell a {
+  text-decoration: none;
+  color: #0e1f26;
+  padding: 30px 30px;
+  background-color: #f26d3d;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.cell a:hover {
+  background-color: #d92e1e;
+  color: #f2ece4;
+}
+
+.cell.wide {
+  flex-grow: 1.5;
+  font-size: 1.2rem;
+}
+
+.single-row {
+  display: flex;
+  padding: 20px;
+}
