@@ -72,5 +72,10 @@
   .container {
     display: block;
     padding: 20px;
+    .card,
+    .card.right {
+      align-items: center;
+      text-align: center;
+    }
   }
 }

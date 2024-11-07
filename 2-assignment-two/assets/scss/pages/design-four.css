@@ -107,4 +107,9 @@ body {
     display: block;
     padding: 20px;
   }
+  .container .card,
+  .container .card.right {
+    align-items: center;
+    text-align: center;
+  }
 }/*# sourceMappingURL=design-four.css.map */
