@@ -28,7 +28,14 @@ body {
 
     .card-header {
       position: relative;
-      @include mixin.horizontal-line;
+      @include mixin.horizontal-line(
+        calc(20px * 2),
+        colors.$h-line-bg,
+        unset,
+        unset,
+        -20px,
+        -20px
+      );
       display: flex;
       justify-content: space-between;
       width: 100%;
@@ -47,7 +54,14 @@ body {
   .card-content {
     position: relative;
     @include mixin.centered-content;
-    @include mixin.horizontal-line;
+    @include mixin.horizontal-line(
+      calc(20px * 2),
+      colors.$h-line-bg,
+      unset,
+      unset,
+      -20px,
+      -20px
+    );
     flex-direction: column;
     width: 100%;
     margin-bottom: 40px;

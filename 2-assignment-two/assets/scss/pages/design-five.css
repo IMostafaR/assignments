@@ -59,8 +59,10 @@ body {
   width: calc(100% + 40px);
   background-color: #eaeced;
   position: absolute;
-  left: -20px;
+  top: unset;
+  right: unset;
   bottom: -20px;
+  left: -20px;
 }
 .container .card .card-header h3 {
   color: #555f66;
@@ -84,8 +86,10 @@ body {
   width: calc(100% + 40px);
   background-color: #eaeced;
   position: absolute;
-  left: -20px;
+  top: unset;
+  right: unset;
   bottom: -20px;
+  left: -20px;
 }
 .container .card-content .profile-pic {
   width: 30%;

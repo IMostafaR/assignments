@@ -1,1 +1,20 @@
 @use "../general/general.scss";
+@use "../variables/mixin";
+
+.container {
+  @include mixin.responsive(xsmall) {
+    padding: 20px;
+  }
+
+  .card {
+    @include mixin.box-shadow;
+    max-width: 20rem;
+    padding: 20px;
+    background-color: #fff;
+
+    .card-header {
+      position: relative;
+      @include mixin.horizontal-line;
+    }
+  }
+}

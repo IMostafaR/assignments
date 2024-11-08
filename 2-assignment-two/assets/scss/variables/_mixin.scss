@@ -29,15 +29,17 @@
   cursor: pointer;
 }
 
-@mixin horizontal-line {
+@mixin horizontal-line($padding, $bg-color, $top, $right, $bottom, $left) {
   &::after {
     content: "";
     height: 0.1rem;
-    width: calc(100% + 40px);
-    background-color: #eaeced;
+    width: calc(100% + $padding);
+    background-color: $bg-color;
     position: absolute;
-    left: -20px;
-    bottom: -20px;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
   }
 }
 

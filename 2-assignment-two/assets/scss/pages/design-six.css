@@ -11,4 +11,33 @@ body {
   align-items: center;
   background-color: #f3f3f9;
   height: 100vh;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+}
+.container .card {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  max-width: 20rem;
+  padding: 20px;
+  background-color: #fff;
+}
+.container .card .card-header {
+  position: relative;
+}
+.container .card .card-header::after {
+  content: "";
+  height: 0.1rem;
+  width: calc(100% + 40px);
+  background-color: #eaeced;
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
 }/*# sourceMappingURL=design-six.css.map */
