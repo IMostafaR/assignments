@@ -1,1 +1,116 @@
 @use "../general/general.scss";
+@use "../variables/colors";
+@use "../variables/media";
+@use "../variables/mixin";
+
+.container {
+  width: 90%;
+  display: flex;
+
+  .card {
+    @include mixin.box-shadow;
+    background-color: #fff;
+    flex: calc(100% / 3);
+    padding: 20px;
+    margin: 15px;
+    @include mixin.centered-content;
+    flex-direction: column;
+
+    .card-header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 40px;
+      &::after {
+        content: "";
+        height: 0.1rem;
+        width: calc(100% + 40px);
+        background-color: #eaeced;
+        position: absolute;
+        left: -20px;
+        bottom: -20px;
+      }
+      h3 {
+        color: colors.$headings;
+      }
+      a {
+        color: colors.$paragraphs;
+      }
+    }
+  }
+
+  .card-content {
+    position: relative;
+
+    @include mixin.centered-content;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      height: 0.1rem;
+      width: calc(100% + 40px);
+      background-color: #eaeced;
+      position: absolute;
+      left: -20px;
+      bottom: -20px;
+    }
+
+    .profile-pic {
+      width: 30%;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+
+    h3 {
+      color: colors.$headings;
+    }
+    p {
+      color: colors.$paragraphs;
+    }
+  }
+
+  .card-footer {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+      margin: 5px;
+      font-size: 0.9rem;
+      &.facebook {
+        color: #1877f2;
+      }
+      &.whatsapp {
+        color: #25d366;
+      }
+      &.linkedin {
+        color: #0077b5;
+      }
+      &.slack {
+        color: #e01563;
+      }
+    }
+  }
+}
+
+@media (max-width: media.$mobile-media) {
+  body {
+    display: block;
+  }
+  .container {
+    width: 100%;
+    display: block;
+    padding: 20px;
+  }
+}
