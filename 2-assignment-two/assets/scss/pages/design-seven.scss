@@ -1,1 +1,48 @@
 @use "../general/general.scss";
+@use "../variables/colors";
+@use "../variables/mixin";
+
+.container {
+  @include mixin.responsive(xsmall) {
+    padding: 20px;
+  }
+
+  .card {
+    @include mixin.box-shadow;
+    background-color: #fff;
+    max-width: 380px;
+
+    .card-header {
+      img {
+        width: 100%;
+        border: {
+          top-left-radius: 5px;
+          top-right-radius: 5px;
+        }
+      }
+    }
+
+    .card-content {
+      padding: 20px;
+
+      h3,
+      p:nth-of-type(2) {
+        color: colors.$headings;
+      }
+
+      h3,
+      p:nth-of-type(1) {
+        margin-bottom: 10px;
+      }
+
+      p:nth-of-type(1) {
+        color: colors.$paragraphs;
+      }
+
+      p:nth-of-type(2) {
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

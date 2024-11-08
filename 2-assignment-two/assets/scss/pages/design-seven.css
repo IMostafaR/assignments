@@ -11,4 +11,43 @@ body {
   align-items: center;
   background-color: #f3f3f9;
   height: 100vh;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+}
+.container .card {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  background-color: #fff;
+  max-width: 380px;
+}
+.container .card .card-header img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.container .card .card-content {
+  padding: 20px;
+}
+.container .card .card-content h3,
+.container .card .card-content p:nth-of-type(2) {
+  color: #555f66;
+}
+.container .card .card-content h3,
+.container .card .card-content p:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+.container .card .card-content p:nth-of-type(1) {
+  color: #878a99;
+}
+.container .card .card-content p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=design-seven.css.map */
