@@ -25,19 +25,60 @@ body {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-  max-width: 20rem;
+  max-width: 30rem;
   padding: 20px;
-  background-color: #fff;
+  color: #fff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.058), rgba(255, 255, 255, 0.058)), url("../../images/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .container .card .card-header {
   position: relative;
+  margin-bottom: 40px;
 }
 .container .card .card-header::after {
   content: "";
-  height: 0.1rem;
+  height: 0.5px;
   width: calc(100% + 40px);
   background-color: #eaeced;
   position: absolute;
-  left: -20px;
+  top: unset;
+  right: unset;
   bottom: -20px;
+  left: -20px;
+}
+.container .card .card-content {
+  position: relative;
+  margin-bottom: 100px;
+}
+.container .card .card-content::after {
+  content: "";
+  height: 0.5px;
+  width: calc(100% + 40px);
+  background-color: #eaeced;
+  position: absolute;
+  top: unset;
+  right: unset;
+  bottom: -80px;
+  left: -20px;
+}
+.container .card .card-content p:nth-of-type(1) {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.container .card .card-content p:nth-of-type(2) {
+  font-size: 0.9rem;
+}
+.container .card .card-footer {
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .card-footer a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=design-six.css.map */

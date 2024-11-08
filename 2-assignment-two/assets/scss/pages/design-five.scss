@@ -29,6 +29,8 @@ body {
     .card-header {
       position: relative;
       @include mixin.horizontal-line(
+        0.1rem,
+        100%,
         calc(20px * 2),
         colors.$h-line-bg,
         unset,
@@ -55,6 +57,8 @@ body {
     position: relative;
     @include mixin.centered-content;
     @include mixin.horizontal-line(
+      0.1rem,
+      100%,
       calc(20px * 2),
       colors.$h-line-bg,
       unset,

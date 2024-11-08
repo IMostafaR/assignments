@@ -1,4 +1,5 @@
 @use "../general/general.scss";
+@use "../variables/colors";
 @use "../variables/mixin";
 
 .container {
@@ -8,13 +9,68 @@
 
   .card {
     @include mixin.box-shadow;
-    max-width: 20rem;
+    max-width: 30rem;
     padding: 20px;
-    background-color: #fff;
+    color: #fff;
+    background: {
+      image: linear-gradient(
+          rgba(255, 255, 255, 0.058),
+          rgba(255, 255, 255, 0.058)
+        ),
+        url("../../images/bg-1.jpg");
+      repeat: no-repeat;
+      position: center;
+      size: cover;
+    }
 
     .card-header {
       position: relative;
-      @include mixin.horizontal-line;
+      margin-bottom: 40px;
+
+      @include mixin.horizontal-line(
+        0.5px,
+        100%,
+        calc(20px * 2),
+        colors.$h-line-bg,
+        unset,
+        unset,
+        -20px,
+        -20px
+      );
+    }
+    .card-content {
+      position: relative;
+      margin-bottom: 100px;
+      @include mixin.horizontal-line(
+        0.5px,
+        100%,
+        calc(20px * 2),
+        colors.$h-line-bg,
+        unset,
+        unset,
+        -80px,
+        -20px
+      );
+
+      p:nth-of-type(1) {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+      p:nth-of-type(2) {
+        font-size: 0.9rem;
+      }
+    }
+
+    .card-footer {
+      font-size: 0.6rem;
+      @include mixin.centered-content;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 10px;
+        font-size: 1.1rem;
+      }
     }
   }
 }

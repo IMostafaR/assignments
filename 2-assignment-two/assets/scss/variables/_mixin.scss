@@ -29,11 +29,20 @@
   cursor: pointer;
 }
 
-@mixin horizontal-line($padding, $bg-color, $top, $right, $bottom, $left) {
+@mixin horizontal-line(
+  $height,
+  $percentage,
+  $padding,
+  $bg-color,
+  $top,
+  $right,
+  $bottom,
+  $left
+) {
   &::after {
     content: "";
-    height: 0.1rem;
-    width: calc(100% + $padding);
+    height: $height;
+    width: calc($percentage + $padding);
     background-color: $bg-color;
     position: absolute;
     top: $top;
