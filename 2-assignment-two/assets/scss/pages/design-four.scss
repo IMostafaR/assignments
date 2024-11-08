@@ -53,14 +53,7 @@
     }
 
     button {
-      @include mixin.radius;
-      width: 100%;
-      padding: 10px;
-      background-color: #0ab39c;
-      color: #fff;
-      font-size: 1.1rem;
-      border: none;
-      cursor: pointer;
+      @include mixin.button-style;
     }
   }
 }
