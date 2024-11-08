@@ -1,1 +1,68 @@
 @use "../general/general.scss";
+@use "../variables/colors";
+@use "../variables/mixin";
+
+.container {
+  @include mixin.responsive(xsmall) {
+    padding: 20px;
+  }
+
+  .card {
+    @include mixin.box-shadow;
+    background-color: #fff;
+    max-width: 380px;
+
+    .card-header {
+      position: relative;
+
+      img {
+        width: 100%;
+        border: {
+          top-left-radius: 5px;
+          top-right-radius: 5px;
+        }
+      }
+
+      h3 {
+        color: colors.$headings;
+        padding: 15px;
+      }
+
+      @include mixin.horizontal-line(
+        0.1rem,
+        100%,
+        0px,
+        colors.$h-line-bg,
+        unset,
+        unset,
+        unset,
+        unset
+      );
+    }
+
+    .card-content {
+      position: relative;
+
+      padding: 15px;
+      color: colors.$paragraphs;
+
+      @include mixin.horizontal-line(
+        0.1rem,
+        100%,
+        0px,
+        colors.$h-line-bg,
+        unset,
+        unset,
+        0px,
+        0px
+      );
+    }
+
+    .card-footer {
+      padding: 15px;
+      color: colors.$headings;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+}

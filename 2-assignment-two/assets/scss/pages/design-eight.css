@@ -11,4 +11,65 @@ body {
   align-items: center;
   background-color: #f3f3f9;
   height: 100vh;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+}
+.container .card {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  background-color: #fff;
+  max-width: 380px;
+}
+.container .card .card-header {
+  position: relative;
+}
+.container .card .card-header img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.container .card .card-header h3 {
+  color: #555f66;
+  padding: 15px;
+}
+.container .card .card-header::after {
+  content: "";
+  height: 0.1rem;
+  width: calc(100% + 0px);
+  background-color: #eaeced;
+  position: absolute;
+  top: unset;
+  right: unset;
+  bottom: unset;
+  left: unset;
+}
+.container .card .card-content {
+  position: relative;
+  padding: 15px;
+  color: #878a99;
+}
+.container .card .card-content::after {
+  content: "";
+  height: 0.1rem;
+  width: calc(100% + 0px);
+  background-color: #eaeced;
+  position: absolute;
+  top: unset;
+  right: unset;
+  bottom: 0px;
+  left: 0px;
+}
+.container .card .card-footer {
+  padding: 15px;
+  color: #555f66;
+  font-weight: bold;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=design-eight.css.map */
