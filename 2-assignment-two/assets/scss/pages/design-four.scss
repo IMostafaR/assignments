@@ -1,10 +1,19 @@
 @use "../general/general.scss";
 @use "../variables/colors";
-@use "../variables/media";
 @use "../variables/mixin";
+
+body {
+  @include mixin.responsive(medium) {
+    display: block;
+  }
+}
 
 .container {
   display: flex;
+  @include mixin.responsive(medium) {
+    display: block;
+    padding: 20px;
+  }
 
   .card {
     @include mixin.box-shadow;
@@ -17,6 +26,10 @@
     flex: {
       direction: column;
     }
+    @include mixin.responsive(medium) {
+      align-items: center;
+      text-align: center;
+    }
 
     &.center {
       align-items: center;
@@ -26,6 +39,10 @@
     &.right {
       align-items: end;
       text-align: end;
+      @include mixin.responsive(medium) {
+        align-items: center;
+        text-align: center;
+      }
     }
 
     .icon {
@@ -55,21 +72,6 @@
 
     button {
       @include mixin.button-style;
-    }
-  }
-}
-
-@media (max-width: media.$mobile-media) {
-  body {
-    display: block;
-  }
-  .container {
-    display: block;
-    padding: 20px;
-    .card,
-    .card.right {
-      align-items: center;
-      text-align: center;
     }
   }
 }

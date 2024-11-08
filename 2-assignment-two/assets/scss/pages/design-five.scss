@@ -1,11 +1,21 @@
 @use "../general/general.scss";
 @use "../variables/colors";
-@use "../variables/media";
 @use "../variables/mixin";
+
+body {
+  @include mixin.responsive(medium) {
+    display: block;
+  }
+}
 
 .container {
   width: 90%;
   display: flex;
+  @include mixin.responsive(medium) {
+    width: 100%;
+    display: block;
+    padding: 20px;
+  }
 
   .card {
     @include mixin.centered-content;
@@ -29,6 +39,7 @@
       }
       a {
         color: colors.$paragraphs;
+        text-decoration: none;
       }
     }
   }
@@ -44,6 +55,19 @@
     .profile-pic {
       width: 30%;
       margin-bottom: 10px;
+
+      @include mixin.responsive(large) {
+        width: 35%;
+      }
+      @include mixin.responsive(medium) {
+        width: 15%;
+      }
+      @include mixin.responsive(small) {
+        width: 20%;
+      }
+      @include mixin.responsive(xsmall) {
+        width: 30%;
+      }
 
       img {
         width: 100%;
@@ -64,12 +88,10 @@
   }
 
   .card-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     a {
       margin: 5px;
       font-size: 0.9rem;
+      text-decoration: none;
       &.facebook {
         color: #1877f2;
       }
@@ -83,16 +105,5 @@
         color: #e01563;
       }
     }
-  }
-}
-
-@media (max-width: media.$mobile-media) {
-  body {
-    display: block;
-  }
-  .container {
-    width: 100%;
-    display: block;
-    padding: 20px;
   }
 }

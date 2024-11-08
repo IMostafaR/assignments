@@ -13,8 +13,20 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+}
+
 .container {
   display: flex;
+}
+@media (max-width: 768px) {
+  .container {
+    display: block;
+    padding: 20px;
+  }
 }
 .container .card {
   border-radius: 5px;
@@ -29,6 +41,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .container .card {
+    align-items: center;
+    text-align: center;
+  }
+}
 .container .card.center {
   align-items: center;
   text-align: center;
@@ -36,6 +54,12 @@ body {
 .container .card.right {
   align-items: end;
   text-align: end;
+}
+@media (max-width: 768px) {
+  .container .card.right {
+    align-items: center;
+    text-align: center;
+  }
 }
 .container .card .icon {
   display: flex;
@@ -74,19 +98,4 @@ body {
   font-size: 1.1rem;
   border: none;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  body {
-    display: block;
-  }
-  .container {
-    display: block;
-    padding: 20px;
-  }
-  .container .card,
-  .container .card.right {
-    align-items: center;
-    text-align: center;
-  }
 }/*# sourceMappingURL=design-four.css.map */
