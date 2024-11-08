@@ -8,29 +8,22 @@
   display: flex;
 
   .card {
+    @include mixin.centered-content;
     @include mixin.box-shadow;
-    background-color: #fff;
     flex: calc(100% / 3);
+    flex-direction: column;
+    background-color: #fff;
     padding: 20px;
     margin: 15px;
-    @include mixin.centered-content;
-    flex-direction: column;
 
     .card-header {
       position: relative;
+      @include mixin.horizontal-line;
       display: flex;
       justify-content: space-between;
       width: 100%;
       margin-bottom: 40px;
-      &::after {
-        content: "";
-        height: 0.1rem;
-        width: calc(100% + 40px);
-        background-color: #eaeced;
-        position: absolute;
-        left: -20px;
-        bottom: -20px;
-      }
+
       h3 {
         color: colors.$headings;
       }
@@ -42,21 +35,11 @@
 
   .card-content {
     position: relative;
-
     @include mixin.centered-content;
+    @include mixin.horizontal-line;
     flex-direction: column;
     width: 100%;
     margin-bottom: 40px;
-
-    &::after {
-      content: "";
-      height: 0.1rem;
-      width: calc(100% + 40px);
-      background-color: #eaeced;
-      position: absolute;
-      left: -20px;
-      bottom: -20px;
-    }
 
     .profile-pic {
       width: 30%;
@@ -81,7 +64,6 @@
   }
 
   .card-footer {
-    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
