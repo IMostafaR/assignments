@@ -1,4 +1,5 @@
 @use "../general/general.scss";
+@use "../general/colors";
 @use "../variables/media";
 @use "../variables/mixin";
 
@@ -44,12 +45,12 @@
 
     h3 {
       margin-bottom: 5px;
-      color: #495157;
+      color: colors.$headings;
     }
 
     p {
       margin-bottom: 15px;
-      color: #878a99;
+      color: colors.$paragraphs;
     }
 
     button {
