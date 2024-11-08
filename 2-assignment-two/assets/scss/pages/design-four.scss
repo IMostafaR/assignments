@@ -1,10 +1,12 @@
 @use "../general/general.scss";
 @use "../variables/media";
+@use "../variables/mixin";
 
 .container {
   display: flex;
 
   .card {
+    @include mixin.box-shadow;
     background: {
       color: #fff;
     }
@@ -26,11 +28,10 @@
     }
 
     .icon {
+      @include mixin.centered-content;
+      @include mixin.radius;
       width: 40px;
       height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: #0ab39c;
       background: {
         color: #daf4f0;
@@ -39,9 +40,6 @@
         bottom: 20px;
       }
       font-size: 0.8rem;
-      border: {
-        radius: 5px;
-      }
     }
 
     h3 {
@@ -55,6 +53,7 @@
     }
 
     button {
+      @include mixin.radius;
       width: 100%;
       padding: 10px;
       background-color: #0ab39c;
@@ -62,11 +61,6 @@
       font-size: 1.1rem;
       border: none;
       cursor: pointer;
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
     }
   }
 }

@@ -1,0 +1,19 @@
+@mixin centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin radius {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@mixin box-shadow {
+  @include radius;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
