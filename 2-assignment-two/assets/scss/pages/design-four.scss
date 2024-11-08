@@ -5,11 +5,15 @@
   display: flex;
 
   .card {
-    background-color: #fff;
+    background: {
+      color: #fff;
+    }
     margin: 15px;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex: {
+      direction: column;
+    }
 
     &.center {
       align-items: center;
@@ -27,15 +31,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #daf4f0;
-      margin-bottom: 20px;
       color: #0ab39c;
+      background: {
+        color: #daf4f0;
+      }
+      margin: {
+        bottom: 20px;
+      }
       font-size: 0.8rem;
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
+      border: {
+        radius: 5px;
+      }
     }
 
     h3 {

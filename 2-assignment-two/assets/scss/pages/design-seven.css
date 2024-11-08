@@ -10,27 +10,7 @@ body {
   display: flex;
   height: 100vh;
   align-items: center;
-}
-
-.home-btn {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  text-decoration: none;
-  padding: 20px 20px;
-  color: #0e1f26;
-  border: none;
-  background-color: #f26d3d;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-.home-btn:hover {
-  background-color: #d92e1e;
-  color: #f2ece4;
+  justify-content: center;
 }
 
 .card-effects {
