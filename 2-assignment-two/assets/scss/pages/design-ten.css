@@ -11,4 +11,141 @@ body {
   align-items: center;
   background-color: #f3f3f9;
   height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+.container .sign-in-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  min-width: 400px;
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 15px;
+}
+@media (max-width: 768px) {
+  .container .sign-in-card {
+    min-width: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .container .sign-in-card {
+    min-width: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .container .sign-in-card {
+    min-width: 150px;
+  }
+}
+.container .sign-in-card .card-header {
+  margin-bottom: 40px;
+}
+.container .sign-in-card .card-header h3 {
+  color: #3a4b85;
+  margin-bottom: 5px;
+}
+.container .sign-in-card .card-header p {
+  color: #878a99;
+}
+.container .sign-in-card .card-form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container .sign-in-card .card-form label {
+  margin-bottom: 3px;
+  color: #555f66;
+  font-weight: bold;
+}
+.container .sign-in-card .card-form input {
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container .sign-in-card .card-form .forget-password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .sign-in-card .card-form .forget-password a {
+  margin-bottom: 3px;
+  text-decoration: none;
+  color: #878a99;
+}
+.container .sign-in-card .card-form .check {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.container .sign-in-card .card-form .check input {
+  margin-right: 3px;
+}
+.container .sign-in-card .card-form button {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0ab39c;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+.container .sign-in-card .card-footer p {
+  color: #555f66;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.container .sign-in-card .card-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container .sign-in-card .card-footer a.facebook {
+  background-color: #405189;
+}
+.container .sign-in-card .card-footer a.google {
+  background-color: #f06548;
+}
+.container .sign-in-card .card-footer a.github {
+  background-color: #212529;
+}
+.container .sign-in-card .card-footer a.twitter {
+  background-color: #299cdb;
+}
+.container p.sign-up {
+  color: #555f66;
+}
+.container p.sign-up a {
+  color: #44548b;
 }/*# sourceMappingURL=design-ten.css.map */

@@ -1,1 +1,130 @@
 @use "../general/general.scss";
+@use "../variables/colors";
+@use "../variables/mixin";
+
+.container {
+  text-align: center;
+  .sign-in-card {
+    @include mixin.centered-content;
+    flex-direction: column;
+    @include mixin.box-shadow;
+    min-width: 400px;
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 15px;
+
+    @include mixin.responsive(medium) {
+      min-width: 350px;
+    }
+    @include mixin.responsive(small) {
+      min-width: 250px;
+    }
+    @include mixin.responsive(xsmall) {
+      min-width: 150px;
+    }
+
+    .card-header {
+      margin-bottom: 40px;
+      h3 {
+        color: #3a4b85;
+        margin-bottom: 5px;
+      }
+      p {
+        color: colors.$paragraphs;
+      }
+    }
+
+    .card-form {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      width: 100%;
+      margin-bottom: 20px;
+
+      label {
+        margin-bottom: 3px;
+        color: colors.$headings;
+        font-weight: bold;
+      }
+
+      input {
+        padding: 8px 10px;
+        margin: 8px 0;
+        border: 2px solid #cccccc;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+
+      .forget-password {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          margin-bottom: 3px;
+          text-decoration: none;
+          color: colors.$paragraphs;
+        }
+      }
+
+      .check {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        input {
+          margin-right: 3px;
+        }
+      }
+
+      button {
+        @include mixin.button-style;
+      }
+    }
+
+    .card-footer {
+      p {
+        color: colors.$headings;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: #fff;
+
+        &.facebook {
+          background-color: #405189;
+        }
+        &.google {
+          background-color: #f06548;
+        }
+        &.github {
+          background-color: #212529;
+        }
+        &.twitter {
+          background-color: #299cdb;
+        }
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+    }
+  }
+
+  p.sign-up {
+    color: colors.$headings;
+    a {
+      color: #44548b;
+    }
+  }
+}

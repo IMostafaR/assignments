@@ -4,9 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Ten</title>
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="../assets/scss/pages/design-ten.css" />
   </head>
   <body>
-    <a href="../assignment-home-page.html" class="home-btn"> Home</a>
+    <div class="container">
+      <div class="sign-in-card">
+        <div class="card-header">
+          <h3>Welcome Back !</h3>
+          <p>Sign in to continue to Velzon.</p>
+        </div>
+        <div class="card-form">
+          <label for="username">Username</label>
+          <input id="username" type="text" placeholder="Enter username" />
+          <div class="forget-password">
+            <label for="password">password</label>
+            <a href="">Forgot password?</a>
+          </div>
+          <input id="password" type="password" placeholder="Enter password" />
+          <div class="check">
+            <input id="remember" type="checkbox" />
+            <label for="remember">Remember me</label>
+          </div>
+          <button>Sign In</button>
+        </div>
+        <div class="card-footer">
+          <p>Sign In with</p>
+          <div class="icons">
+            <a class="facebook" href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a class="google" href="https://www.google.com/" target="_blank"
+              ><i class="fa-brands fa-google"></i
+            ></a>
+            <a class="github" href="https://github.com/" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a class="twitter" href="https://x.com/" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <p class="sign-up">Don't have an account? <a href="#">Signup</a></p>
+    </div>
+    <script src="../assets/fontawesome/js/all.min.js"></script>
   </body>
 </html>
