@@ -1,0 +1,23 @@
+:root {
+  --main-blue: #5271ff;
+  --main-black: #292929;
+  --main-gray: #4b4b4b;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+.nav-link {
+  color: var(--main-gray);
+}
+
+.nav-link:hover {
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.nav-link.active {
+  background-color: var(--main-blue) !important;
+  color: #fff;
+}
