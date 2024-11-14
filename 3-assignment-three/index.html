@@ -12,279 +12,725 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="vh-100 container-fluid row">
+    <!-- Toggle Button for Sidebar -->
+    <button
+      class="navbar-toggler bg-light position-fixed top-0 bottom-0 d-lg-none col-sm-1 col-2"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navbarOffcanvasLg"
+      aria-controls="navbarOffcanvasLg"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"> <i class="fas fa-bars h1"></i> </span>
+    </button>
     <!-- ********************** SIDE BAR ********************** -->
-    <header class="bg-light col-3 position-fixed top-0 bottom-0 py-5">
-      <div class="header-info"></div>
+    <header
+      class="bg-light col-sm-6 col-lg-3 col-8 position-fixed top-0 bottom-0 py-5 offcanvas-lg"
+      tabindex="-1"
+      id="navbarOffcanvasLg"
+      aria-labelledby="navbarOffcanvasLgLabel"
+    >
+      <div class="header-info pb-5 mb-3 w-100 text-center border-bottom">
+        <div class="profile-pic mb-4 position-relative">
+          <img
+            class="w-25 rounded-circle"
+            src="assets/images/profile-pic.jpg"
+            alt=""
+          />
+          <p
+            class="position-absolute rounded-circle bg-white d-inline-flex align-items-center justify-content-center shadow"
+          >
+            👋
+          </p>
+        </div>
+        <h1 class="h3 fw-bold mb-0">John Doe</h1>
+        <p>Senior Software Engineer</p>
+        <div class="social">
+          <a
+            class="text-decoration-none me-2 rounded-circle bg-white d-inline-flex align-items-center justify-content-center shadow"
+            href="https:/www.facebook.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            class="text-decoration-none me-2 rounded-circle bg-white d-inline-flex align-items-center justify-content-center shadow"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            class="text-decoration-none me-2 rounded-circle bg-white d-inline-flex align-items-center justify-content-center shadow"
+            href="https://www.x.com/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a
+            class="text-decoration-none me-2 rounded-circle bg-white d-inline-flex align-items-center justify-content-center shadow"
+            href="https://www.linkedin.com/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
       <nav class="h-100 flex-column align-items-stretch pe-4">
         <nav class="nav nav-pills flex-column">
-          <a class="nav-link my-1" href="#about-me">About Me</a>
-          <a class="nav-link my-1" href="#portfolio">Portfolio</a>
-          <a class="nav-link my-1" href="#services-pricing"
-            >Services & Pricing</a
+          <a class="nav-link my-1" href="#about-me">
+            <i class="fa-solid fa-user me-2"></i> About Me</a
           >
-          <a class="nav-link my-1" href="#resume">Resume</a>
-          <a class="nav-link my-1" href="#products">Products</a>
-          <a class="nav-link my-1" href="#blog">Blog</a>
-          <a class="nav-link my-1" href="#contact">Contact</a>
+          <a class="nav-link my-1" href="#portfolio"
+            ><i class="fa-regular fa-file-code me-2"></i> Portfolio</a
+          >
+          <a class="nav-link my-1" href="#services-pricing"
+            ><i class="fa-solid fa-briefcase me-2"></i> Services & Pricing</a
+          >
+          <a class="nav-link my-1" href="#resume"
+            ><i class="fa-regular fa-newspaper me-2"></i> Resume</a
+          >
+          <a class="nav-link my-1" href="#products"
+            ><i class="fa-solid fa-store me-2"></i> Products</a
+          >
+          <a class="nav-link my-1" href="#blog"
+            ><i class="fa-brands fa-blogger me-2"></i> Blog</a
+          >
+          <a class="nav-link my-1" href="#contact"
+            ><i class="fa-regular fa-address-card me-2"></i> Contact</a
+          >
         </nav>
       </nav>
     </header>
 
     <!-- ********************** MAIN CONTENT ********************** -->
-    <main class="col-9 offset-3">
-      <div
-        class="container"
-        data-bs-spy="scroll"
-        data-bs-smooth-scroll="true"
-        tabindex="0"
-      >
+    <main
+      class="col-lg-9 offset-lg-3 col-sm-11 offset-sm-1 col-10 offset-2 py-5 ps-4 pe-0 my-5"
+    >
+      <div data-bs-spy="scroll" data-bs-smooth-scroll="true" tabindex="0">
         <!-- === about me === -->
-        <section id="about-me">
-          <h4>about-me</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            harum facilis ut quidem id dicta, iure modi ad nisi soluta debitis
-            culpa adipisci alias suscipit totam assumenda aut ipsa iste. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quod
-            quis corrupti dolore, ipsa sed ab accusantium eum doloremque
-            repellat aspernatur ipsam facilis maxime, animi aut quam sapiente
-            nostrum enim? Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Aliquid harum facilis ut quidem id dicta, iure modi ad nisi
-            soluta debitis culpa adipisci alias suscipit totam assumenda aut
-            ipsa iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate quod quis corrupti dolore, ipsa sed ab accusantium eum
-            doloremque repellat aspernatur ipsam facilis maxime, animi aut quam
-            sapiente nostrum enim? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Aliquid harum facilis ut quidem id dicta, iure
-            modi ad nisi soluta debitis culpa adipisci alias suscipit totam
-            assumenda aut ipsa iste. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Cupiditate quod quis corrupti dolore, ipsa sed ab
-            accusantium eum doloremque repellat aspernatur ipsam facilis maxime,
-            animi aut quam sapiente nostrum enim? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aliquid harum facilis ut quidem id
-            dicta, iure modi ad nisi soluta debitis culpa adipisci alias
-            suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Cupiditate quod quis corrupti dolore,
-            ipsa sed ab accusantium eum doloremque repellat aspernatur ipsam
-            facilis maxime, animi aut quam sapiente nostrum enim? Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Aliquid harum facilis
-            ut quidem id dicta, iure modi ad nisi soluta debitis culpa adipisci
-            alias suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Cupiditate quod quis corrupti
-            dolore, ipsa sed ab accusantium eum doloremque repellat aspernatur
-            ipsam facilis maxime, animi aut quam sapiente nostrum enim?
-          </p>
+        <section id="about-me" class="row mb-5">
+          <div class="intro col-auto col-md-9 col-lg-8">
+            <p class="fs-3 mb-0">HI, I'M A FREELANCER</p>
+            <h2 class="fw-bold">Developer</h2>
+            <p>I'm a software engineer specializing in scalable web apps.</p>
+            <button
+              class="border-0 btn-portfolio rounded-5 py-3 px-4 me-4 mb-3"
+            >
+              <a class="text-decoration-none text-white" href="#"
+                ><i class="fa-solid fa-arrow-right me-2"></i> View Portfolio</a
+              >
+            </button>
+            <button class="border-0 btn-resume rounded-5 py-3 px-4">
+              <a class="text-decoration-none text-white" href="#"
+                ><i class="fa-solid fa-id-badge me-2"></i> View Resume</a
+              >
+            </button>
+          </div>
+          <div class="profile-pic col-auto col-md-3 col-lg-4">
+            <img class="w-100" src="assets/images/profile-pic.jpg" alt="" />
+          </div>
         </section>
 
         <!-- === portfolio === -->
-        <section id="portfolio">
-          <h4>portfolio</h4>
+        <section
+          id="portfolio"
+          class="d-sm-flex justify-content-around align-items-center w-75 mb-5"
+        >
+          <h2 class="px-3">5</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            harum facilis ut quidem id dicta, iure modi ad nisi soluta debitis
-            culpa adipisci alias suscipit totam assumenda aut ipsa iste. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quod
-            quis corrupti dolore, ipsa sed ab accusantium eum doloremque
-            repellat aspernatur ipsam facilis maxime, animi aut quam sapiente
-            nostrum enim? Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Aliquid harum facilis ut quidem id dicta, iure modi ad nisi
-            soluta debitis culpa adipisci alias suscipit totam assumenda aut
-            ipsa iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate quod quis corrupti dolore, ipsa sed ab accusantium eum
-            doloremque repellat aspernatur ipsam facilis maxime, animi aut quam
-            sapiente nostrum enim? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Aliquid harum facilis ut quidem id dicta, iure
-            modi ad nisi soluta debitis culpa adipisci alias suscipit totam
-            assumenda aut ipsa iste. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Cupiditate quod quis corrupti dolore, ipsa sed ab
-            accusantium eum doloremque repellat aspernatur ipsam facilis maxime,
-            animi aut quam sapiente nostrum enim? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aliquid harum facilis ut quidem id
-            dicta, iure modi ad nisi soluta debitis culpa adipisci alias
-            suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Cupiditate quod quis corrupti dolore,
-            ipsa sed ab accusantium eum doloremque repellat aspernatur ipsam
-            facilis maxime, animi aut quam sapiente nostrum enim? Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Aliquid harum facilis
-            ut quidem id dicta, iure modi ad nisi soluta debitis culpa adipisci
-            alias suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Cupiditate quod quis corrupti
-            dolore, ipsa sed ab accusantium eum doloremque repellat aspernatur
-            ipsam facilis maxime, animi aut quam sapiente nostrum enim? Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Aliquid harum
-            facilis ut quidem id dicta, iure modi ad nisi soluta debitis culpa
-            adipisci alias suscipit totam assumenda aut ipsa iste. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Cupiditate quod quis
-            corrupti dolore, ipsa sed ab accusantium eum doloremque repellat
-            aspernatur ipsam facilis maxime, animi aut quam sapiente nostrum
-            enim?
+            Years of <br />
+            Experience
+          </p>
+          <h2 class="px-3">110</h2>
+          <p>
+            Projects <br />
+            Completed
+          </p>
+          <h2 class="px-3">6k</h2>
+          <p>
+            Clients <br />
+            Worldwide
           </p>
         </section>
-
+        <hr />
         <!-- === services & pricing === -->
-        <section id="services-pricing">
-          <h4>services-pricing</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            harum facilis ut quidem id dicta, iure modi ad nisi soluta debitis
-            culpa adipisci alias suscipit totam assumenda aut ipsa iste. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quod
-            quis corrupti dolore, ipsa sed ab accusantium eum doloremque
-            repellat aspernatur ipsam facilis maxime, animi aut quam sapiente
-            nostrum enim? Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Aliquid harum facilis ut quidem id dicta, iure modi ad nisi
-            soluta debitis culpa adipisci alias suscipit totam assumenda aut
-            ipsa iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate quod quis corrupti dolore, ipsa sed ab accusantium eum
-            doloremque repellat aspernatur ipsam facilis maxime, animi aut quam
-            sapiente nostrum enim? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Aliquid harum facilis ut quidem id dicta, iure
-            modi ad nisi soluta debitis culpa adipisci alias suscipit totam
-            assumenda aut ipsa iste. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Cupiditate quod quis corrupti dolore, ipsa sed ab
-            accusantium eum doloremque repellat aspernatur ipsam facilis maxime,
-            animi aut quam sapiente nostrum enim? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aliquid harum facilis ut quidem id
-            dicta, iure modi ad nisi soluta debitis culpa adipisci alias
-            suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Cupiditate quod quis corrupti dolore,
-            ipsa sed ab accusantium eum doloremque repellat aspernatur ipsam
-            facilis maxime, animi aut quam sapiente nostrum enim?
-          </p>
+        <section id="services-pricing" class="mb-5">
+          <h2 class="ps-2">What I do</h2>
+          <div class="d-md-flex justify-content-between">
+            <p class="w-75">
+              I have more than 10 years' experience building software for
+              clients all over the world. Below is a quick overview of my main
+              technical skill sets and technologies I use. Want to find out more
+              about my experience? Check out my online resume and project
+              portfolio.
+            </p>
+            <div>
+              <button class="border-0 btn-portfolio rounded-5 py-3 px-4 me-4">
+                <a class="text-decoration-none text-white" href="#"
+                  ><i class="fa-solid fa-arrow-right me-2"></i> Services &
+                  Pricing</a
+                >
+              </button>
+            </div>
+          </div>
         </section>
 
         <!-- === resume === -->
-        <section id="resume">
-          <h4>resume</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            harum facilis ut quidem id dicta, iure modi ad nisi soluta debitis
-            culpa adipisci alias suscipit totam assumenda aut ipsa iste. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quod
-            quis corrupti dolore, ipsa sed ab accusantium eum doloremque
-            repellat aspernatur ipsam facilis maxime, animi aut quam sapiente
-            nostrum enim? Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Aliquid harum facilis ut quidem id dicta, iure modi ad nisi
-            soluta debitis culpa adipisci alias suscipit totam assumenda aut
-            ipsa iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate quod quis corrupti dolore, ipsa sed ab accusantium eum
-            doloremque repellat aspernatur ipsam facilis maxime, animi aut quam
-            sapiente nostrum enim? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Aliquid harum facilis ut quidem id dicta, iure
-            modi ad nisi soluta debitis culpa adipisci alias suscipit totam
-            assumenda aut ipsa iste. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Cupiditate quod quis corrupti dolore, ipsa sed ab
-            accusantium eum doloremque repellat aspernatur ipsam facilis maxime,
-            animi aut quam sapiente nostrum enim? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aliquid harum facilis ut quidem id
-            dicta, iure modi ad nisi soluta debitis culpa adipisci alias
-            suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Cupiditate quod quis corrupti dolore,
-            ipsa sed ab accusantium eum doloremque repellat aspernatur ipsam
-            facilis maxime, animi aut quam sapiente nostrum enim?
-          </p>
+        <section id="resume" class="row mb-5 g-3">
+          <div
+            class="col-xl-3 col-md-6 col-sm-6 col-auto d-flex align-items-stretch"
+          >
+            <div class="p-4 border bg-light">
+              <div class="icons">
+                <i class="fa-brands fa-square-js text-warning fs-2 mb-3"></i>
+              </div>
+              <h2 class="fs-5">Vanilla JavaScript</h2>
+              <p>
+                List skills and technologies here. Customize as needed. Built on
+                HTML5, Sass, and Bootstrap 5.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6 col-sm-6 col-auto d-flex align-items-stretch"
+          >
+            <div class="p-4 border bg-light">
+              <div class="icons">
+                <i class="fa-brands fa-angular text-danger fs-2 mb-3 me-3"></i>
+                <i class="fa-brands fa-react text-info fs-2 mb-3 me-3"></i>
+                <i class="fa-brands fa-vuejs text-success fs-2 mb-3 me-3"></i>
+              </div>
+              <h2 class="fs-5">Angular, React & Vue</h2>
+              <p>
+                List skills and technologies here. Customize as needed. Built on
+                HTML5, Sass, and Bootstrap 5.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6 col-sm-6 col-auto d-flex align-items-stretch"
+          >
+            <div class="p-4 border bg-light">
+              <div class="icons">
+                <i class="fa-brands fa-node-js text-success fs-2 mb-3 me-3"></i>
+              </div>
+              <h2 class="fs-5">Node.js</h2>
+              <p>
+                List skills and technologies here. Customize as needed. Built on
+                HTML5, Sass, and Bootstrap 5.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6 col-sm-6 col-auto d-flex align-items-stretch"
+          >
+            <div class="p-4 border bg-light">
+              <div class="icons">
+                <i
+                  class="fa-brands fa-python text-info-emphasis fs-2 mb-3 me-3"
+                ></i>
+              </div>
+              <h2 class="fs-5">python & Django</h2>
+              <p>
+                List skills and technologies here. Customize as needed. Built on
+                HTML5, Sass, and Bootstrap 5.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6 col-sm-6 col-auto d-flex align-items-stretch"
+          >
+            <div class="p-4 border bg-light">
+              <div class="icons">
+                <i
+                  class="fa-brands fa-php text-info-emphasis fs-2 mb-3 me-3"
+                ></i>
+              </div>
+              <h2 class="fs-5">PHP</h2>
+              <p>
+                List skills and technologies here. Customize as needed. Built on
+                HTML5, Sass, and Bootstrap 5.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6 col-sm-6 col-auto d-flex align-items-stretch"
+          >
+            <div class="p-4 border bg-light">
+              <div class="icons">
+                <i class="fa-brands fa-npm text-danger fs-2 mb-3 me-3"></i>
+                <i class="fa-brands fa-gulp text-danger fs-2 mb-3 me-3"></i>
+                <i class="fa-brands fa-grunt text-warning fs-2 mb-3 me-3"></i>
+              </div>
+              <h2 class="fs-5">npm, Gulp & Grunt</h2>
+              <p>
+                List skills and technologies here. Customize as needed. Built on
+                HTML5, Sass, and Bootstrap 5.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6 col-sm-6 col-auto d-flex align-items-stretch"
+          >
+            <div class="p-4 border bg-light">
+              <div class="icons">
+                <i class="fa-brands fa-html5 text-danger fs-2 mb-3 me-3"></i>
+                <i class="fa-brands fa-css3-alt text-info fs-2 mb-3 me-3"></i>
+              </div>
+              <h2 class="fs-5">HTML & CSS</h2>
+              <p>
+                List skills and technologies here. Customize as needed. Built on
+                HTML5, Sass, and Bootstrap 5.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6 col-sm-6 col-auto d-flex align-items-stretch"
+          >
+            <div class="p-4 border bg-light">
+              <div class="icons">
+                <i class="fa-brands fa-sass text-danger fs-2 mb-3 me-3"></i>
+                <i
+                  class="fa-brands fa-less text-info-emphasis fs-2 mb-3 me-3"
+                ></i>
+              </div>
+              <h2 class="fs-5">Sass & LESS</h2>
+              <p>
+                List skills and technologies here. Customize as needed. Built on
+                HTML5, Sass, and Bootstrap 5.
+              </p>
+            </div>
+          </div>
         </section>
 
         <!-- === products === -->
-        <section id="products">
-          <h4>products</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            harum facilis ut quidem id dicta, iure modi ad nisi soluta debitis
-            culpa adipisci alias suscipit totam assumenda aut ipsa iste. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quod
-            quis corrupti dolore, ipsa sed ab accusantium eum doloremque
-            repellat aspernatur ipsam facilis maxime, animi aut quam sapiente
-            nostrum enim? Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Aliquid harum facilis ut quidem id dicta, iure modi ad nisi
-            soluta debitis culpa adipisci alias suscipit totam assumenda aut
-            ipsa iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate quod quis corrupti dolore, ipsa sed ab accusantium eum
-            doloremque repellat aspernatur ipsam facilis maxime, animi aut quam
-            sapiente nostrum enim? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Aliquid harum facilis ut quidem id dicta, iure
-            modi ad nisi soluta debitis culpa adipisci alias suscipit totam
-            assumenda aut ipsa iste. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Cupiditate quod quis corrupti dolore, ipsa sed ab
-            accusantium eum doloremque repellat aspernatur ipsam facilis maxime,
-            animi aut quam sapiente nostrum enim? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aliquid harum facilis ut quidem id
-            dicta, iure modi ad nisi soluta debitis culpa adipisci alias
-            suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Cupiditate quod quis corrupti dolore,
-            ipsa sed ab accusantium eum doloremque repellat aspernatur ipsam
-            facilis maxime, animi aut quam sapiente nostrum enim?
-          </p>
+        <section id="products" class="mb-5">
+          <div
+            class="in-touch mb-5 d-md-flex justify-content-between align-items-center text-white p-4"
+          >
+            <div class="w-75">
+              <h2>Let's Work together on your next Project</h2>
+              <p>
+                I am available for freelance projects. Hire me and get your
+                project done.
+              </p>
+            </div>
+            <div>
+              <button class="border-0 btn-portfolio rounded-5 py-3 px-4 me-4">
+                <a class="text-decoration-none text-white" href="#"
+                  ><i class="fa-solid fa-arrow-right me-2"></i> Let's get in
+                  touch</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="f-projects mb-5">
+            <h2 class="ps-2">Featured Projects</h2>
+            <div class="d-md-flex justify-content-between">
+              <p class="w-75">
+                My step-by-step guide ensures a smooth project journey, from the
+                initial consultation to the final delivery. I take care of every
+                detail, allowing you to focus on what you do best.
+              </p>
+              <div>
+                <button class="border-0 btn-portfolio rounded-5 py-3 px-4 me-4">
+                  <a class="text-decoration-none text-white" href="#"
+                    ><i class="fa-solid fa-arrow-right me-2"></i>View
+                    portfolio</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="f-projects row g-5">
+            <div class="col-lg-6 col-auto d-flex align-items-stretch">
+              <div>
+                <div>
+                  <img
+                    class="img-fluid mb-4"
+                    src="assets/images/project-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center px-3"
+                >
+                  <div>
+                    <div class="mb-3">
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        React JS
+                      </p>
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        gsap
+                      </p>
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        Web Development
+                      </p>
+                    </div>
+                    <h3 class="fs-4">Crypto Website Development for DeFi X</h3>
+                  </div>
+                  <div class="project-link">
+                    <a
+                      href="#"
+                      class="text-decoration-none me-2 rounded-circle bg-secondary-subtle text-dark d-inline-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-auto d-flex align-items-stretch">
+              <div>
+                <div>
+                  <img
+                    class="img-fluid mb-4"
+                    src="assets/images/project-2.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center px-3"
+                >
+                  <div>
+                    <div class="mb-3">
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        React JS
+                      </p>
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        gsap
+                      </p>
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        Web Development
+                      </p>
+                    </div>
+                    <h3 class="fs-4">Salesforce CRM - Invoice Management</h3>
+                  </div>
+                  <div class="project-link">
+                    <a
+                      href="#"
+                      class="text-decoration-none me-2 rounded-circle bg-secondary-subtle text-dark d-inline-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-auto d-flex align-items-stretch">
+              <div>
+                <div>
+                  <img
+                    class="img-fluid mb-4"
+                    src="assets/images/project-3.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center px-3"
+                >
+                  <div>
+                    <div class="mb-3">
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        React JS
+                      </p>
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        gsap
+                      </p>
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        Web Development
+                      </p>
+                    </div>
+                    <h3 class="fs-4">Car Rental App</h3>
+                  </div>
+                  <div class="project-link">
+                    <a
+                      href="#"
+                      class="text-decoration-none me-2 rounded-circle bg-secondary-subtle text-dark d-inline-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-auto d-flex align-items-stretch">
+              <div>
+                <div>
+                  <img
+                    class="img-fluid mb-4"
+                    src="assets/images/project-4.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center px-3"
+                >
+                  <div>
+                    <div class="mb-3">
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        React JS
+                      </p>
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        gsap
+                      </p>
+                      <p class="btn border border-2 rounded-5 py-2 px-4 mb-2">
+                        Web Development
+                      </p>
+                    </div>
+                    <h3 class="fs-4">Financial management</h3>
+                  </div>
+                  <div class="project-link">
+                    <a
+                      href="#"
+                      class="text-decoration-none me-2 rounded-circle bg-secondary-subtle text-dark d-inline-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- === blog === -->
-        <section id="blog">
-          <h4>blog</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            harum facilis ut quidem id dicta, iure modi ad nisi soluta debitis
-            culpa adipisci alias suscipit totam assumenda aut ipsa iste. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quod
-            quis corrupti dolore, ipsa sed ab accusantium eum doloremque
-            repellat aspernatur ipsam facilis maxime, animi aut quam sapiente
-            nostrum enim? Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Aliquid harum facilis ut quidem id dicta, iure modi ad nisi
-            soluta debitis culpa adipisci alias suscipit totam assumenda aut
-            ipsa iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate quod quis corrupti dolore, ipsa sed ab accusantium eum
-            doloremque repellat aspernatur ipsam facilis maxime, animi aut quam
-            sapiente nostrum enim? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Aliquid harum facilis ut quidem id dicta, iure
-            modi ad nisi soluta debitis culpa adipisci alias suscipit totam
-            assumenda aut ipsa iste. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Cupiditate quod quis corrupti dolore, ipsa sed ab
-            accusantium eum doloremque repellat aspernatur ipsam facilis maxime,
-            animi aut quam sapiente nostrum enim? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aliquid harum facilis ut quidem id
-            dicta, iure modi ad nisi soluta debitis culpa adipisci alias
-            suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Cupiditate quod quis corrupti dolore,
-            ipsa sed ab accusantium eum doloremque repellat aspernatur ipsam
-            facilis maxime, animi aut quam sapiente nostrum enim?
-          </p>
+        <section id="blog" class="mb-5">
+          <div class="f-projects mb-5">
+            <h2 class="ps-2">Latest Blog Posts</h2>
+            <div class="d-md-flex justify-content-between align-items-start">
+              <p class="w-75">More than 1500+ agencies using portfolify</p>
+              <div>
+                <button class="border-0 btn-portfolio rounded-5 py-3 px-4 me-4">
+                  <a class="text-decoration-none text-white" href="#"
+                    ><i class="fa-solid fa-arrow-right me-2"></i>See All
+                    Articles</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="f-projects row g-5">
+            <div class="col-lg-4 col-auto d-flex align-items-stretch">
+              <div>
+                <div>
+                  <img
+                    class="img-fluid mb-4 rounded-4"
+                    src="assets/images/blog-1.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="px-4">
+                  <p class="fs-6 mb-2">
+                    March 18, 2024
+                    <span class="forward-slash">/</span> Articles
+                  </p>
+                  <h3 class="fs-5 fw-bold">
+                    7 Great Web Development Languages to Learn this Year
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-auto d-flex align-items-stretch">
+              <div>
+                <div>
+                  <img
+                    class="img-fluid mb-4 rounded-4"
+                    src="assets/images/blog-2.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="px-4">
+                  <p class="fs-6 mb-2">
+                    March 18, 2024
+                    <span class="forward-slash">/</span> Tutorials
+                  </p>
+                  <h3 class="fs-5 fw-bold">
+                    How to Optimize your Website for Better Performance
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-auto d-flex align-items-stretch">
+              <div>
+                <div>
+                  <img
+                    class="img-fluid mb-4 rounded-4"
+                    src="assets/images/blog-3.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="px-4">
+                  <p class="fs-6 mb-2">
+                    March 18, 2024 <span class="forward-slash">/</span> Articles
+                  </p>
+                  <h3 class="fs-5 fw-bold">
+                    8 Tips to Improve your Web Development Skills in 2024
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- === contact === -->
         <section id="contact">
-          <h4>contact</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            harum facilis ut quidem id dicta, iure modi ad nisi soluta debitis
-            culpa adipisci alias suscipit totam assumenda aut ipsa iste. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quod
-            quis corrupti dolore, ipsa sed ab accusantium eum doloremque
-            repellat aspernatur ipsam facilis maxime, animi aut quam sapiente
-            nostrum enim? Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Aliquid harum facilis ut quidem id dicta, iure modi ad nisi
-            soluta debitis culpa adipisci alias suscipit totam assumenda aut
-            ipsa iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate quod quis corrupti dolore, ipsa sed ab accusantium eum
-            doloremque repellat aspernatur ipsam facilis maxime, animi aut quam
-            sapiente nostrum enim? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Aliquid harum facilis ut quidem id dicta, iure
-            modi ad nisi soluta debitis culpa adipisci alias suscipit totam
-            assumenda aut ipsa iste. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Cupiditate quod quis corrupti dolore, ipsa sed ab
-            accusantium eum doloremque repellat aspernatur ipsam facilis maxime,
-            animi aut quam sapiente nostrum enim? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aliquid harum facilis ut quidem id
-            dicta, iure modi ad nisi soluta debitis culpa adipisci alias
-            suscipit totam assumenda aut ipsa iste. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Cupiditate quod quis corrupti dolore,
-            ipsa sed ab accusantium eum doloremque repellat aspernatur ipsam
-            facilis maxime, animi aut quam sapiente nostrum enim?
-          </p>
+          <div class="f-projects mb-5">
+            <h2 class="ps-2">Contact Details</h2>
+            <p class="w-50">
+              If you are going to use a passage of Lorem Ipsum, you need to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+          </div>
+          <div
+            class="mb-5 d-sm-flex justify-content-between align-items-center"
+          >
+            <div
+              class="contact-details d-sm-flex justify-content-between align-items-center"
+            >
+              <div class="icon px-4">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <div class="pt-3">
+                <h3>Phone</h3>
+                <p>+1234567890</p>
+              </div>
+            </div>
+            <div
+              class="contact-details d-sm-flex justify-content-between align-items-center"
+            >
+              <div class="icon px-4">
+                <i class="fa-regular fa-compass"></i>
+              </div>
+              <div class="pt-3">
+                <h3>Location</h3>
+                <p>123 Example Street, City, Country</p>
+              </div>
+            </div>
+            <div
+              class="contact-details d-sm-flex justify-content-between align-items-center"
+            >
+              <div class="icon px-4">
+                <i class="fa-regular fa-envelope-open"></i>
+              </div>
+              <div class="pt-3">
+                <h3>Email</h3>
+                <p>yourmail@domain.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-5">
+            <iframe
+              class="w-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5135213.917743004!2d5.1731519346950074!3d51.063636414389364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a721ec2b1be6b%3A0x75e85d6b8e91e55b!2sGermany!5e0!3m2!1sen!2seg!4v1731557562277!5m2!1sen!2seg"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="f-projects mb-5">
+            <h2 class="ps-2">Get In Touch</h2>
+            <p class="w-50">
+              If you are going to use a passage of Lorem Ipsum, you need to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+          </div>
+          <div class="border border-1 rounded-5 p-5 mb-5">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Name"
+                  />
+                  <label for="floatingInput">Your Name *</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address *</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="+00000000000"
+                  />
+                  <label for="floatingInput">Phone *</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="123 aa aaa, aa"
+                  />
+                  <label for="floatingInput">Location *</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingTextarea2">Your Message:</label>
+                </div>
+              </div>
+              <div class="col-12 mb-5">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Save my name, email, and website in this browser for the
+                    next time.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="border-0 btn-portfolio rounded-5 py-3 px-4 me-4 mb-3 text-white fw-bold"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </section>
       </div>
+      <!-- ********************** FOOTER ********************** -->
+      <footer>
+        <p class="h6">Copyright &copy; 2024 BootCamp. All Rights Reserved.</p>
+      </footer>
     </main>
 
-    <!-- ********************** FOOTER ********************** -->
-    <footer></footer>
     <!-- J A V A S C R I P T -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/fontawesome/js/all.min.js"></script>

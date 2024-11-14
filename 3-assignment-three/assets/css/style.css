@@ -1,12 +1,12 @@
 :root {
   --main-blue: #5271ff;
-  --main-black: #292929;
-  --main-gray: #4b4b4b;
+  --main-black: #050013;
+  --main-gray: #636363;
 }
 
-/* * {
-  box-sizing: border-box;
-} */
+.fa-bars {
+  color: var(--main-blue);
+}
 
 .nav-link {
   color: var(--main-gray);
@@ -20,4 +20,134 @@
 .nav-link.active {
   background-color: var(--main-blue) !important;
   color: #fff;
+}
+
+header .header-info h1 {
+  color: var(--main-black);
+}
+
+header .header-info p {
+  color: var(--main-gray);
+}
+
+header .header-info .social a,
+header .profile-pic p {
+  width: 30px;
+  height: 30px;
+}
+
+header .profile-pic p {
+  bottom: -15px;
+}
+
+#about-me .intro h2 {
+  font-size: 6rem;
+  color: var(--main-blue);
+}
+
+@media (max-width: 576px) {
+  #about-me .intro h2 {
+    font-size: 4rem;
+    color: var(--main-blue);
+  }
+}
+
+@media (max-width: 480px) {
+  #about-me .intro h2 {
+    font-size: 2rem;
+    color: var(--main-blue);
+  }
+}
+
+#about-me .intro p:nth-child(1) {
+  color: var(--main-black);
+}
+
+#about-me .intro p:nth-child(3) {
+  color: var(--main-gray);
+}
+
+.btn-portfolio {
+  background-color: var(--main-blue);
+}
+
+.btn-resume {
+  background-color: var(--main-black);
+}
+
+#portfolio h2 {
+  color: var(--main-blue);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#portfolio p {
+  color: var(--main-gray);
+}
+
+@media (max-width: 768px) {
+  #portfolio h2 {
+    font-size: 2.5rem;
+  }
+  #portfolio p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #portfolio h2 {
+    font-size: 2rem;
+  }
+  #portfolio p {
+    font-size: 1rem;
+  }
+}
+
+#services-pricing h2,
+.f-projects h2 {
+  font-size: 3rem;
+  color: var(--main-black);
+  border-left: 4px solid var(--main-blue);
+}
+
+#services-pricing p,
+#resume p,
+.f-projects p {
+  color: var(--main-gray);
+}
+
+#resume h2 {
+  color: var(--main-black);
+}
+
+.in-touch {
+  background-image: url("../images/pic-1.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+}
+
+.in-touch h2 {
+  font-size: 3rem;
+}
+
+#products .project-link a {
+  width: 50px;
+  height: 50px;
+}
+
+#contact .contact-details .icon {
+  font-size: 3rem;
+  color: var(--main-blue);
+  border-left: 2px solid var(--main-blue);
+}
+
+#contact .contact-details h3 {
+  font-size: 1.5rem;
+  color: var(--main-black);
+}
+
+#contact .contact-details p {
+  font-size: 0.8rem;
+  color: var(--main-gray);
 }
