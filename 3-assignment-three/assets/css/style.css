@@ -4,6 +4,19 @@
   --main-gray: #636363;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-blue);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
 .fa-bars {
   color: var(--main-blue);
 }
@@ -38,6 +51,20 @@ header .profile-pic p {
 
 header .profile-pic p {
   bottom: -15px;
+}
+
+header::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+header::-webkit-scrollbar-thumb {
+  background-color: var(--main-blue);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 #about-me .intro h2 {
